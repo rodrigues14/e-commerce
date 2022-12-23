@@ -1,0 +1,49 @@
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px 40px;
+}
+
+.header .logo {
+  width: 45px;
+}
+
+.header div {
+  display: flex;
+  flex-direction: row;
+  border: 1px solid var(--preto);
+  max-width: 315px;
+  width: 100%;
+  border-radius: 6px;
+  overflow: hidden;
+}
+
+.header div input {
+  width: 80%;
+  padding: 4px 6px;
+  border: none;
+  outline: none;
+  color: var(--preto);
+  background-color: var(--branco);
+  font-size: 18px;
+}
+
+.header div button {
+  flex: 1;
+  cursor: pointer;
+  border: none;
+  background-color: var(--cinza-claro);
+  border-left: 1px solid var(--preto);
+  width: 40px;
+  height: 40px;
+}
+
+.header div button img {
+  width: 35px;
+}
+
+.header .carrinho {
+  margin-left: 10px;
+  width: 35px;
+}
