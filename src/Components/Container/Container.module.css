@@ -1,0 +1,9 @@
+.container section {
+  margin: 50px 60px;
+}
+
+@media screen and (max-width: 650px) {
+  .container section {
+    margin: 50px 10px;
+  }
+}

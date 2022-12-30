@@ -1,0 +1,26 @@
+[
+  {
+    "id": 1,
+    "titulo": "Camisa PSG - 2022/2023",
+    "preco": "R$ 350,00",
+    "imagem": "assets/produtos/1/camisa1.jpeg"
+  },
+  {
+    "id": 2,
+    "titulo": "Camisa Brasil - 2019/2020",
+    "preco": "R$ 350,00",
+    "imagem": "assets/produtos/2/camisa2.jpeg"
+  },
+  {
+    "id": 3,
+    "titulo": "Camisa Barcelona - 2022/2023",
+    "preco": "R$ 350,00",
+    "imagem": "assets/produtos/3/camisa3.jpeg"
+  },
+  {
+    "id": 4,
+    "titulo": "Camisa Juventus - 2022/2023",
+    "preco": "R$ 350,00",
+    "imagem": "assets/produtos/4/camisa4.jpeg"
+  }
+]
