@@ -1,0 +1,16 @@
+.inputQuantidade {
+  display: flex;
+  flex-direction: column;
+}
+
+.inputQuantidade label {
+  font-weight: 500;
+}
+
+.inputQuantidade input {
+  width: 90px;
+  padding: 8px;
+  font-size: 20px;
+  text-align: center;
+  margin-top: 5px;
+}

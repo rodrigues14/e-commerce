@@ -1,26 +1,30 @@
-.boxProduto {
-  height: auto;
-  max-width: 250px;
-  border: 1px solid black;
+.container {
+  padding: 40px 10px;
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+  min-height: calc(100vh - 89.44px - 80px);
 }
 
-.boxProduto img {
- height: 250px;
- width: 100%;
+.container img {
+  max-width: 350px;
+  height: 350px;
 }
 
-.boxProduto div {
-  text-align: center;
-  padding: 20px 10px;
+.container > div {
+  width: 350px;
+  height: 350px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 
-.boxProduto h1 {
-  font-size: 16px;
+.container h1 {
+  font-size: 24px;
+  margin-bottom: 30px;
   font-weight: 500;
-  margin-bottom: 6px;
 }
 
-.boxProduto h2 {
-  font-size: 18px;
+.container h2 {
   font-weight: 400;
 }

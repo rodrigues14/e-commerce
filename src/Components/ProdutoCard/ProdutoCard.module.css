@@ -1,0 +1,28 @@
+.boxProduto {
+  height: auto;
+  max-width: 250px;
+  border: 1px solid black;
+  color: var(--preto);
+}
+
+.boxProduto img {
+ height: 250px;
+ width: 100%;
+}
+
+.boxProduto div {
+  text-align: center;
+  padding: 20px 10px;
+}
+
+.boxProduto h1 {
+  font-size: 16px;
+  font-weight: 500;
+  margin-bottom: 6px;
+  text-decoration: none;
+}
+
+.boxProduto h2 {
+  font-size: 18px;
+  font-weight: 400;
+}

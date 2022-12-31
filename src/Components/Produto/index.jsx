@@ -1,16 +1,31 @@
-import styles from './Produto.module.css'
 import React from 'react'
+import styles from './Produto.module.css'
+import { useParams } from 'react-router-dom'
+import produtos from '../../json/produtos.json'
+import InputQuantidade from 'Components/InputQuantidade'
+import Button from 'Components/Button'
 
-export default function Produto({ imagem, titulo, preco }) {
+export default function Produto() {
+  const parametros = useParams()
+
+  const produto = produtos.find((produto) => {
+    return produto.id === Number(parametros.id)
+  })
+
   return (
-    <div className={styles.boxProduto}>
-      <img 
-        src={imagem} 
-        alt={titulo} 
-      />
+    <div className={styles.container}>
+      <img src={`/assets/produtos/${produto.id}/camisa${produto.id}.jpeg`} alt={produto.titulo} />
       <div>
-        <h1>{titulo}</h1>
-        <h2>{preco}</h2>
+        <div>
+          <h1>{produto.titulo}</h1>
+          <h2>{produto.preco}</h2>
+        </div>
+        <div>
+          <InputQuantidade />
+          <Button>
+            Adicionar ao carrinho
+          </Button>
+        </div>
       </div>
     </div>
   )

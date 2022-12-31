@@ -1,6 +1,6 @@
 import React from 'react'
 import styles from './Inicio.module.css'
-import Produto from 'Components/Produto'
+import ProdutoCard from 'Components/ProdutoCard'
 import produtos from '../../json/produtos.json'
 
 export default function Inicio() {
@@ -8,7 +8,7 @@ export default function Inicio() {
     <>
       <section className={styles.container}>
         {produtos.map((produto) => {
-          return <Produto 
+          return <ProdutoCard 
             {...produto}
             key={produto.id} 
           />
