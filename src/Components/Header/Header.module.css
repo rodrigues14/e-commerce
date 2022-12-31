@@ -5,9 +5,8 @@
   padding: 20px 40px;
 }
 
-.header .logo {
-  width: 45px;
-  margin-right: 10px;
+.logo {
+  margin-right: 8px;
 }
 
 .header div {
@@ -45,12 +44,29 @@
 }
 
 .header .carrinho {
-  margin-left: 10px;
+  margin-left: 65px;
   width: 35px;
 }
 
 @media screen and (max-width: 650px) {
   .header {
     padding: 20px 10px;
+  }
+  .header .carrinho {
+    margin-left: 8px;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .header {
+    display: block;
+  }
+  .carrinho {
+    position: absolute;
+    right: 10px;
+    top: 36px;
+  }
+  .header div {
+    margin-inline: auto;
   }
 }
