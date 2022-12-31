@@ -15,7 +15,7 @@
   border: 1px solid var(--preto);
   max-width: 315px;
   width: 100%;
-  border-radius: 6px;
+  border-radius: 20px;
   overflow: hidden;
 }
 
@@ -33,14 +33,14 @@
   flex: 1;
   cursor: pointer;
   border: none;
-  background-color: var(--cinza-claro);
-  border-left: 1px solid var(--preto);
+  background-color: var(--branco);
   width: 40px;
   height: 40px;
 }
 
 .header div button img {
-  width: 35px;
+  width: 30px;
+  margin-left: 5px;
 }
 
 .header .carrinho {
