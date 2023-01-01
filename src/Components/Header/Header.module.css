@@ -5,68 +5,12 @@
   padding: 20px 40px;
 }
 
-.logo {
-  margin-right: 8px;
-}
-
-.header div {
-  display: flex;
-  flex-direction: row;
-  border: 1px solid var(--preto);
-  max-width: 315px;
-  width: 100%;
-  border-radius: 20px;
-  overflow: hidden;
-}
-
-.header div input {
-  width: 80%;
-  padding: 4px 6px;
-  border: none;
-  outline: none;
-  color: var(--preto);
-  background-color: var(--branco);
-  font-size: 18px;
-}
-
-.header div button {
-  flex: 1;
-  cursor: pointer;
-  border: none;
-  background-color: var(--branco);
-  width: 40px;
-  height: 40px;
-}
-
-.header div button img {
-  width: 30px;
-  margin-left: 5px;
-}
-
 .header .carrinho {
-  margin-left: 65px;
   width: 35px;
 }
 
 @media screen and (max-width: 650px) {
   .header {
     padding: 20px 10px;
-  }
-  .header .carrinho {
-    margin-left: 8px;
-  }
-}
-
-@media screen and (max-width: 500px) {
-  .header {
-    display: block;
-  }
-  .carrinho {
-    position: absolute;
-    right: 10px;
-    top: 36px;
-  }
-  .header div {
-    margin-inline: auto;
   }
 }
