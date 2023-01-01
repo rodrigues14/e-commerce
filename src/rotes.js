@@ -4,7 +4,7 @@ import Footer from "Components/Footer"
 import Carrinho from "Pages/Carrinho"
 import Inicio from "Pages/Inicio"
 import { BrowserRouter, Route, Routes } from "react-router-dom"
-import Produto from "Components/Produto"
+import Produto from "Pages/Produto"
 
 function AppRoutes() {
   return (
