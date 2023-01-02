@@ -5,7 +5,13 @@ export default function InputQuantidade() {
   return (
     <div className={styles.inputQuantidade}>
       <label htmlFor="quantidade">Quantidade</label>
-      <input type="number" name="quantidade" id="quantidade" />
+      <input 
+        type="number" 
+        name="quantidade" 
+        id="quantidade"
+        min="0"
+        max="20" 
+      />
     </div>
   )
 }

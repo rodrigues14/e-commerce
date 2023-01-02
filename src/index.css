@@ -11,3 +11,7 @@
   --cinza-claro: #cacaca;
   --fonte: 'Roboto', sans-serif;
 }
+
+a {
+  text-decoration: none;
+}
