@@ -5,8 +5,30 @@
   padding: 20px 40px;
 }
 
-.header .carrinho {
+.carrinho {
   width: 35px;
+}
+
+.containerCarrinho {
+  position: relative;
+}
+
+.contador {
+  background-color: #74ff74;
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  position: absolute;
+  bottom: -2px;
+  right: -6px;
+}
+
+.contador p {
+  width: 25px;
+  height: 25px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 @media screen and (max-width: 650px) {
