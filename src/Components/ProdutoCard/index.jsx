@@ -6,7 +6,7 @@ import iconRemover from '../../assets/images/remover.svg'
 import { useCarrinhoContext } from 'hook/useCarrinhoContext'
 
 function ProdutoCard({ imagem, titulo, preco, id }) {
-  const { carrinho, AdicionarProduto } = useCarrinhoContext();
+  const { carrinho, AdicionarProduto, removerProduto } = useCarrinhoContext();
   const produtoNoCarrinho = carrinho.find(itemDoCarrinho => itemDoCarrinho.id === id);
 
   return (
@@ -21,7 +21,10 @@ function ProdutoCard({ imagem, titulo, preco, id }) {
         <h1>{titulo}</h1>
         <h2>{preco}</h2>
         <div className={styles.itemQuantidade}>
-          <button className={styles.remover}>
+          <button 
+            className={styles.remover}
+            onClick={() => removerProduto(id)}
+          >
             <span>
               <img src={iconRemover} alt="Remover" />
             </span>
