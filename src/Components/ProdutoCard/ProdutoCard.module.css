@@ -40,6 +40,7 @@
   background-color: #e6e6e6;
   cursor: pointer;
   transition: .3s;
+  border: 1px solid black;
 }
 
 .remover:hover, 
@@ -50,6 +51,10 @@
 .remover {
   border-radius: 15px 0px 0px 15px;
   color: red;
+}
+
+.remover:disabled {
+  cursor: not-allowed;
 }
 
 .boxQuantidade {

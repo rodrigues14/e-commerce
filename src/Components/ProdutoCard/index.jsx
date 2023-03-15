@@ -24,6 +24,7 @@ function ProdutoCard({ imagem, titulo, preco, id }) {
           <button 
             className={styles.remover}
             onClick={() => removerProduto(id)}
+            disabled={!produtoNoCarrinho}
           >
             <span>
               <img src={iconRemover} alt="Remover" />
