@@ -6,7 +6,6 @@
 }
 
 .boxProduto img {
- height: 250px;
  width: 100%;
 }
 
@@ -80,4 +79,23 @@
   display: flex;
   align-items: center;
   justify-content: center;
+}
+
+
+@media screen and (max-width: 560px) {
+  .boxProduto {
+    max-width: 170px;
+  }
+}
+
+@media screen and (max-width: 387px) {
+  .boxProduto {
+    max-width: 140px;
+  }
+}
+
+@media screen and (max-width: 326px) {
+  .boxProduto {
+    max-width: 240px;
+  }
 }
