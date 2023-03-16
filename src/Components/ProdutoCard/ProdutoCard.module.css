@@ -26,61 +26,11 @@
   font-weight: 400;
 }
 
-.itemQuantidade {
-  display: flex;
-  justify-content: center;
-  align-items: center;
+.boxSeletorQuantidade {
   margin-top: 20px;
-}
-
-.remover, .adicionar {
-  width: 35px;
-  height: 32px;
-  background-color: #e6e6e6;
-  cursor: pointer;
-  transition: .3s;
-  border: 1px solid black;
-}
-
-.remover:hover, 
-.adicionar:hover {
-  background-color: #cfcfcf;
-}
-
-.remover {
-  border-radius: 15px 0px 0px 15px;
-  color: red;
-}
-
-.remover:disabled {
-  cursor: not-allowed;
-}
-
-.boxQuantidade {
-  border-top: 1px solid var(--preto);
-  border-bottom: 1px solid var(--preto);
-  width: 35px;
-  height: 32px;
-}
-
-.adicionar {
-  border-radius: 0px 15px 15px 0px;
-}
-
-.itemQuantidade img {
-  width: 20px;
-  height: 20px;
-  margin-top: 4px;
-}
-
-.boxQuantidade span {
-  font-size: 20px;
-  height: 30px;
   display: flex;
-  align-items: center;
   justify-content: center;
 }
-
 
 @media screen and (max-width: 560px) {
   .boxProduto {
