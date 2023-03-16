@@ -1,0 +1,45 @@
+.cabecalhoCarrinho {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+  margin-bottom: 50px;
+}
+
+.cabecalhoCarrinho h1 {
+  font-size: 30px;
+}
+
+.cabecalhoCarrinho button {
+  display: flex;
+  align-items: center;
+  border-radius: 50%;
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+}
+
+.cabecalhoCarrinho button img {
+  width: 35px;
+}
+
+.carrinho {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+.infosPagamento {
+  width: 250px;
+}
+
+.infosPagamento h3 {
+  font-size: 20px;
+  font-weight: 500;
+}
+
+.infosPagamento > div {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+  font-size: 22px;
+}
