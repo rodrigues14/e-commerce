@@ -3,10 +3,12 @@
   align-items: center;
   gap: 30px;
   margin-bottom: 50px;
+  width: 453.38px;
 }
 
 .cabecalhoCarrinho h1 {
-  font-size: 30px;
+  font-size: 26px;
+  font-weight: 500;
 }
 
 .carrinho {
@@ -29,4 +31,13 @@
   justify-content: space-between;
   margin-top: 20px;
   font-size: 22px;
+}
+
+@media screen and (max-width: 520px) {
+  .cabecalhoCarrinho {
+    width: auto;
+  }
+  .cabecalhoCarrinho h1 {
+    font-size: 24px;
+  }
 }

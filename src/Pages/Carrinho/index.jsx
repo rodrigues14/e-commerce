@@ -21,6 +21,7 @@ export default function Carrinho() {
               {...produto}
             />
           ))}
+          <h3>{carrinho.length === 0 && "O carrinho está vazio! 😢"}</h3>
         </div>
         <div className={styles.infosPagamento}>
           <h3>Resumo do pedido</h3>
