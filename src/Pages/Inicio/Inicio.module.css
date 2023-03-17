@@ -1,12 +1,32 @@
 .produtos {
-  display: flex;
-  justify-content: space-around;
-  flex-wrap: wrap;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
   gap: 30px 10px;
+  max-width: 1400px;
+  margin-inline: auto;
+  margin-top: 40px;
 }
 
 .buscar {
   display: flex;
   justify-content: center;
   margin-bottom: 16px;
+}
+
+@media screen and (max-width: 800px) {
+  .produtos {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media screen and (max-width: 550px) {
+  .produtos {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media screen and (max-width: 380px) {
+  .produtos {
+    grid-template-columns: repeat(1, 1fr);
+  }
 }
