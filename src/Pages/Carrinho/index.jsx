@@ -6,7 +6,7 @@ import React from 'react'
 import styles from './Carrinho.module.css'
 
 export default function Carrinho() {
-  const { carrinho } = useCarrinhoContext();
+  const { carrinho, valorTotalCarrinho } = useCarrinhoContext();
   return (
     <section className={styles.container}>
       <div className={styles.carrinho}>
@@ -27,7 +27,7 @@ export default function Carrinho() {
           <h3>Resumo do pedido</h3>
           <div>
             <p>Total:</p>
-            <p>R$</p>
+            <p>R$ {valorTotalCarrinho.toFixed(2)}</p>
           </div>
           <Button>
             Finalizar compra
