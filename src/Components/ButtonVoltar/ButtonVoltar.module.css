@@ -1,0 +1,12 @@
+.buttonVoltar {
+  display: flex;
+  align-items: center;
+  border-radius: 50%;
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+}
+
+.buttonVoltar img {
+  width: 35px;
+}

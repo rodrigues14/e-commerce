@@ -9,19 +9,6 @@
   font-size: 30px;
 }
 
-.cabecalhoCarrinho button {
-  display: flex;
-  align-items: center;
-  border-radius: 50%;
-  border: none;
-  background-color: transparent;
-  cursor: pointer;
-}
-
-.cabecalhoCarrinho button img {
-  width: 35px;
-}
-
 .carrinho {
   display: flex;
   justify-content: space-around;
