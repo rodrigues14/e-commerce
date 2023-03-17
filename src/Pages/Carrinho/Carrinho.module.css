@@ -33,6 +33,10 @@
   font-size: 22px;
 }
 
+.containerButton {
+  margin-top: 20px;
+}
+
 @media screen and (max-width: 520px) {
   .cabecalhoCarrinho {
     width: auto;

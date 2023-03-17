@@ -29,9 +29,11 @@ export default function Carrinho() {
             <p>Total:</p>
             <p>R$ {valorTotalCarrinho.toFixed(2)}</p>
           </div>
-          <Button>
-            Finalizar compra
-          </Button>
+          <div className={styles.containerButton}>
+            <Button disabled={true}>
+              Finalizar compra
+            </Button>
+          </div>
         </div>
       </div>
     </section>
