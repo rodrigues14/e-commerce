@@ -9,19 +9,19 @@
  width: 100%;
 }
 
-.boxProduto > div {
+.detalhes {
   text-align: center;
   padding: 20px 10px;
 }
 
-.boxProduto h1 {
+.detalhes h1 {
   font-size: 16px;
   font-weight: 500;
   margin-bottom: 6px;
   text-decoration: none;
 }
 
-.boxProduto h2 {
+.detalhes h2 {
   font-size: 18px;
   font-weight: 400;
 }
@@ -30,6 +30,12 @@
   margin-top: 20px;
   display: flex;
   justify-content: center;
+}
+
+.containerButton {
+  display: block;
+  text-align: center;
+  margin-bottom: 20px;
 }
 
 @media screen and (max-width: 560px) {

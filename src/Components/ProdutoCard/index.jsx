@@ -1,29 +1,24 @@
 import styles from './ProdutoCard.module.css'
 import React, { memo } from 'react'
-import { Link } from 'react-router-dom'
-import SeletorQuantidade from 'Components/SeletorQuantidade'
+import { useNavigate } from 'react-router-dom'
+import Button from 'Components/Button';
 
 function ProdutoCard({ imagem, titulo, preco, id }) {
+  const navigate = useNavigate();
   return (
-    <div className={styles.boxProduto}>
-      <Link to={`/produtos/${id}`}>
+      <div className={styles.boxProduto}>
         <img
           src={imagem}
           alt={titulo}
         />
-      </Link>
-      <div>
-        <h1>{titulo}</h1>
-        <h2>{preco}</h2>
-        <div className={styles.boxSeletorQuantidade}>
-          <SeletorQuantidade 
-            id={id}
-            produto={{ imagem, titulo, preco, id }}
-          />
+        <div className={styles.detalhes}>
+          <h1>{titulo}</h1>
+          <h2>{preco}</h2>
+        </div>
+        <div className={styles.containerButton}>
+          <Button onClick={() => navigate(`/produtos/${id}`)}>Detalhes</Button>
         </div>
       </div>
-      
-    </div>
   )
 }
 
