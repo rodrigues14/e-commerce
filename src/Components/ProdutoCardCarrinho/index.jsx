@@ -8,7 +8,7 @@ export default function ProdutoCardCarrinho({ imagem, titulo, preco, id }) {
       <img src={imagem} alt={titulo} />
       <div className={styles.infoProduto}>
         <h2>{titulo}</h2>
-        <p>{preco}</p>
+        <p>R$ {Number(preco).toFixed(2)}</p>
         <SeletorQuantidade
           id={id}
           produto={{ imagem, titulo, preco, id }}
