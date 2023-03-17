@@ -10,7 +10,7 @@ export default function Carrinho() {
   return (
     <section className={styles.container}>
       <div className={styles.carrinho}>
-        <div>
+        <div className={styles.produtoCabecalho}>
           <div className={styles.cabecalhoCarrinho}>
             <ButtonVoltar />
             <h1>Carrinho</h1>
@@ -21,7 +21,7 @@ export default function Carrinho() {
               {...produto}
             />
           ))}
-          <h3>{carrinho.length === 0 && "O carrinho está vazio! 😢"}</h3>
+          <h2>{carrinho.length === 0 && "O carrinho está vazio! 😢"}</h2>
         </div>
         <div className={styles.infosPagamento}>
           <h3>Resumo do pedido</h3>

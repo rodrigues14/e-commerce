@@ -23,7 +23,7 @@ export default function Produto() {
         <div>
           <div>
             <h1>{produto.titulo}</h1>
-            <h2>{produto.preco}</h2>
+            <h2>R$ {Number(produto.preco).toFixed(2)}</h2>
           </div>
           <div>
             <p className={styles.addAoCarrinho}>Adicionar ao carrinho</p>

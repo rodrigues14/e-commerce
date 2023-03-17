@@ -1,3 +1,8 @@
+.container {
+  padding: 40px 10px;
+  margin-top: 0;
+}
+
 .cabecalhoCarrinho {
   display: flex;
   align-items: center;
@@ -44,4 +49,14 @@
   .cabecalhoCarrinho h1 {
     font-size: 24px;
   }
+}
+
+@media screen and (max-width: 650px) {
+  .container {
+    padding-top: 0;
+  }
+  .produtoCabecalho {
+    width: 100%;
+    margin-bottom: 40px;
+  }  
 }

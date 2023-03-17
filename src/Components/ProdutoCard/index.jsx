@@ -13,7 +13,7 @@ function ProdutoCard({ imagem, titulo, preco, id }) {
         />
         <div className={styles.detalhes}>
           <h1>{titulo}</h1>
-          <h2>{preco}</h2>
+          <h2>R$ {Number(preco).toFixed(2)}</h2>
         </div>
         <div className={styles.containerButton}>
           <Button onClick={() => navigate(`/produtos/${id}`)}>Detalhes</Button>
